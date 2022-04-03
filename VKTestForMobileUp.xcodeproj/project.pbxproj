@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,27 @@
 		E56A329727F7A02900C3AE74 /* VKTestForMobileUp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E56A329527F7A02900C3AE74 /* VKTestForMobileUp.xcdatamodeld */; };
 		E56A329927F7A02C00C3AE74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56A329827F7A02C00C3AE74 /* Assets.xcassets */; };
 		E56A329C27F7A02C00C3AE74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56A329A27F7A02C00C3AE74 /* LaunchScreen.storyboard */; };
+		E56A32A727F7A3EF00C3AE74 /* SwiftyVK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56A32A627F7A3EF00C3AE74 /* SwiftyVK.framework */; };
+		E56A32A827F7A3EF00C3AE74 /* SwiftyVK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E56A32A627F7A3EF00C3AE74 /* SwiftyVK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E56A32AB27F7AE3300C3AE74 /* VKDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A32AA27F7AE3300C3AE74 /* VKDelegate.swift */; };
+		E56A32AD27F7AFFD00C3AE74 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A32AC27F7AFFD00C3AE74 /* GalleryViewController.swift */; };
+		E56A32AF27F9C65200C3AE74 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A32AE27F9C65100C3AE74 /* PhotoViewController.swift */; };
+		E56A32B127FA1E7400C3AE74 /* AlbumPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56A32B027FA1E7400C3AE74 /* AlbumPhotosViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E56A32A927F7A3EF00C3AE74 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E56A32A827F7A3EF00C3AE74 /* SwiftyVK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E56A328927F7A02900C3AE74 /* VKTestForMobileUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKTestForMobileUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +46,11 @@
 		E56A329827F7A02C00C3AE74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E56A329B27F7A02C00C3AE74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E56A329D27F7A02C00C3AE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E56A32A627F7A3EF00C3AE74 /* SwiftyVK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyVK.framework; path = Carthage/Build/iOS/SwiftyVK.framework; sourceTree = "<group>"; };
+		E56A32AA27F7AE3300C3AE74 /* VKDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKDelegate.swift; sourceTree = "<group>"; };
+		E56A32AC27F7AFFD00C3AE74 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		E56A32AE27F9C65100C3AE74 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		E56A32B027FA1E7400C3AE74 /* AlbumPhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPhotosViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56A32A727F7A3EF00C3AE74 /* SwiftyVK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +70,7 @@
 			children = (
 				E56A328B27F7A02900C3AE74 /* VKTestForMobileUp */,
 				E56A328A27F7A02900C3AE74 /* Products */,
+				E56A32A527F7A3EE00C3AE74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +85,28 @@
 		E56A328B27F7A02900C3AE74 /* VKTestForMobileUp */ = {
 			isa = PBXGroup;
 			children = (
+				E56A32AA27F7AE3300C3AE74 /* VKDelegate.swift */,
 				E56A328C27F7A02900C3AE74 /* AppDelegate.swift */,
 				E56A328E27F7A02900C3AE74 /* SceneDelegate.swift */,
+				E56A32AE27F9C65100C3AE74 /* PhotoViewController.swift */,
+				E56A32AC27F7AFFD00C3AE74 /* GalleryViewController.swift */,
 				E56A329027F7A02900C3AE74 /* ViewController.swift */,
 				E56A329227F7A02900C3AE74 /* Main.storyboard */,
 				E56A329827F7A02C00C3AE74 /* Assets.xcassets */,
 				E56A329A27F7A02C00C3AE74 /* LaunchScreen.storyboard */,
 				E56A329D27F7A02C00C3AE74 /* Info.plist */,
 				E56A329527F7A02900C3AE74 /* VKTestForMobileUp.xcdatamodeld */,
+				E56A32B027FA1E7400C3AE74 /* AlbumPhotosViewModel.swift */,
 			);
 			path = VKTestForMobileUp;
+			sourceTree = "<group>";
+		};
+		E56A32A527F7A3EE00C3AE74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E56A32A627F7A3EF00C3AE74 /* SwiftyVK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +119,7 @@
 				E56A328527F7A02900C3AE74 /* Sources */,
 				E56A328627F7A02900C3AE74 /* Frameworks */,
 				E56A328727F7A02900C3AE74 /* Resources */,
+				E56A32A927F7A3EF00C3AE74 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -105,7 +145,7 @@
 				};
 			};
 			buildConfigurationList = E56A328427F7A02900C3AE74 /* Build configuration list for PBXProject "VKTestForMobileUp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -142,8 +182,12 @@
 			files = (
 				E56A329127F7A02900C3AE74 /* ViewController.swift in Sources */,
 				E56A328D27F7A02900C3AE74 /* AppDelegate.swift in Sources */,
+				E56A32AB27F7AE3300C3AE74 /* VKDelegate.swift in Sources */,
+				E56A32AD27F7AFFD00C3AE74 /* GalleryViewController.swift in Sources */,
+				E56A32AF27F9C65200C3AE74 /* PhotoViewController.swift in Sources */,
 				E56A328F27F7A02900C3AE74 /* SceneDelegate.swift in Sources */,
 				E56A329727F7A02900C3AE74 /* VKTestForMobileUp.xcdatamodeld in Sources */,
+				E56A32B127FA1E7400C3AE74 /* AlbumPhotosViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +271,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Debug;
 		};
@@ -282,6 +327,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = YES;
 			};
 			name = Release;
 		};
@@ -292,7 +338,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLL9MQ4V4C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VKTestForMobileUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.BigApps.VKTestForMobileUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -311,7 +362,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLL9MQ4V4C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VKTestForMobileUp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +375,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.BigApps.VKTestForMobileUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

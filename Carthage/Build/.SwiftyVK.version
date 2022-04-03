@@ -1,0 +1,25 @@
+{
+  "Mac" : [
+    {
+      "hash" : "809bb42542084af0b5943a11da9a0c1c0a2e8f6909327ab472e643014d48b70b",
+      "name" : "SwiftyVK",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "3.4.2",
+  "iOS" : [
+    {
+      "hash" : "e93ec226600016d2bfa90bbade029ace49ff50bdac1bf7ec868d7b692271324b",
+      "name" : "SwiftyVK",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+    }
+  ]
+}
